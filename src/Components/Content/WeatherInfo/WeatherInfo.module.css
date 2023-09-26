@@ -1,0 +1,7 @@
+.weatherInfo {
+  display: flex;
+  flex-direction: column;
+  background-color: #C3D5F9;
+  margin: 50px;
+  padding: 30px;
+}
