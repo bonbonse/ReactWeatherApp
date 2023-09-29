@@ -2,7 +2,10 @@ import s from './WeatherInfo.module.css'
 let WeatherInfo = (props) => {
     return (
         <div className={s.weatherInfo}>
-            Температура: {props.temperature}
+
+            <div>Погода: {props.weather}</div>
+            <div>Температура: {props.temperature}</div>
+            <div>Ветер: {props.wind}</div>
         </div>
     )
 }

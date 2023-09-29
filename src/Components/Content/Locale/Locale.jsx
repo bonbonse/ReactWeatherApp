@@ -1,10 +1,18 @@
+import {connect} from "react-redux";
+import {mapStateToPropsFactory} from "react-redux/es/connect/mapStateToProps";
 
-let Locale = () => {
+let Locale = (props) => {
     return (
         <div>
-            Locale
+            Погода в стране {props.location.country} в городе {props.location.city}
         </div>
     )
 }
 
-export default Locale;
+let mapStateToProps = (state) => {
+    return {
+        location: state.search.location
+    }
+}
+
+export default connect(mapStateToProps, {})(Locale);

@@ -1,6 +1,5 @@
 import s from './Content.module.css'
 import Locale from "./Locale/Locale";
-import WeatherInfo from "./WeatherInfo/WeatherInfo";
 import WeatherInfoContainer from "./WeatherInfo/WeatherInfoContainer";
 let Content = () => {
     return (
