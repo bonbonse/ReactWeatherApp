@@ -1,4 +1,6 @@
 import s from './Header.module.css'
+import {DatePicker} from "@mui/x-date-pickers/DatePicker";
+
 
 let Header = (props) => {
     let setTextInCitySearch = (e) => {
@@ -10,7 +12,8 @@ let Header = (props) => {
                    value={props.curTextInCitySearch}
                    onChange={(e) => setTextInCitySearch(e)}
             />
-            <input placeholder="Input date"/>
+            <DatePicker />
+
         </header>
     )
 

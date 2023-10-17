@@ -1,14 +1,14 @@
-import {combineReducers, createStore} from 'redux';
+import { configureStore } from '@reduxjs/toolkit'
 import weatherInfoReducer from "./weatherInfoReducer";
 import headerReducer from "./headerReducer";
 
 
-let reducers = combineReducers({
+let reducers = {
     weatherInfo: weatherInfoReducer,
     search: headerReducer
-});
+};
 
-let store = createStore(reducers);
+let store = configureStore({reducer: reducers});
 
 export default store;
 

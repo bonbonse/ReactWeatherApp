@@ -1,5 +1,4 @@
 import {connect} from "react-redux";
-import {mapStateToPropsFactory} from "react-redux/es/connect/mapStateToProps";
 
 let Locale = (props) => {
     return (
